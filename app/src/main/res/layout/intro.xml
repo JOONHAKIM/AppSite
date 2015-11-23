@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:weightSum="1"
+    android:layoutAnimation="@anim/layout_anim">
+    <!--해당 레이아웃에 에니메이션을 준다.-->
+
+    <ImageButton
+        android:background="#05000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/appmark"
+        android:drawingCacheQuality="high"
+        android:layout_weight="0.32"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="grh_mark"
+        android:id="@+id/img_app_mark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Android App-Site"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:paddingTop="2dp"
+        android:paddingBottom="10dp"
+        android:shadowColor="@color/colorShadow"
+        android:shadowRadius="5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Think of new generation\n새로운 생각을 하는 사람들"
+        android:gravity="center"
+        android:textColor="#e03001"
+        android:textSize="12dp"
+        android:lineSpacingExtra="3px"
+        android:textStyle="bold"
+        android:paddingBottom="30px"/>
+
+    <ImageButton
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/anim_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가락연구소\n 이경민 소장 /연구원 : 김준하,이민수\n http://www.garakholdings.com garak@grhold.com\n 010-8718-5842"
+        android:gravity="left"
+        android:textColor="#555555"
+        android:textSize="11dp"
+        android:textStyle="normal"
+        android:lineSpacingExtra="0px"
+        android:autoLink="all"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"/>
+
+
+
+
+</LinearLayout>
